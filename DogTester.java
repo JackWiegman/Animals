@@ -10,6 +10,10 @@ public class DogTester {
 		rover.pet();
 		clifford.eat();
 		rover.scold();
+		rover.scold();
+		rover.scold();
+		rover.scold();
+		rover.eat();
 	}
 
 }

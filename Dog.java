@@ -34,13 +34,17 @@ public class Dog {
 	public void eat() {
 		System.out.println(name + " ate");
 		
-		if (this.petted) {
-			happiness = positiveHappinessChange(25);
+		if (happiness < 25) {
+			System.out.println(name + " isn't happy enough to eat");
 		} else {
-			System.out.println(name + " hasn't been pet since last meal");
+			if (this.petted) {
+				happiness = positiveHappinessChange(25);
+			} else {
+				System.out.println(name + " hasn't been pet since last meal");
+			}
+			
+			this.petted = false;
 		}
-		
-		this.petted = false;
 		System.out.println("Happiness: " + happiness + "%");
 	}
 
@@ -68,7 +72,6 @@ public class Dog {
 
 		return happiness;
 	}
-
 
 
 	// Getter
@@ -116,3 +119,4 @@ public class Dog {
 	}
 
 }
+
