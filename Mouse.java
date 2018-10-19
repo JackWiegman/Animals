@@ -17,14 +17,14 @@ public class Mouse {
 		} else {
 			safeness = 0;
 		}
-		System.out.println("Mouse met " + Cat.name);
+		System.out.println("Mouse met " + cat.name);
 		System.out.println("Mouse feels " + safeness + "% safe");
 		System.out.println("Speed is: " + runawaySpeed(safeness));
 	}
 
 
 	public void meetDog(Dog dog) {
-		if (dog.happiness() >= 50) {
+		if (dog.happiness >= 50) {
 			if (safeness <= 90) {
 				safeness += 10;
 			} else {
@@ -37,7 +37,7 @@ public class Mouse {
 				safeness = 0;
 			}
 		}
-		System.out.println("Mouse met Dog at " + Dog.happiness + "% happiness");
+		System.out.println("Mouse met Dog at " + dog.happiness + "% happiness");
 		System.out.println("Mouse feels " + safeness + "% safe");
 		System.out.println("Speed is: " + runawaySpeed(safeness));
 	}
