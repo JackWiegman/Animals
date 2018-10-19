@@ -4,7 +4,7 @@ public class Dog {
 	String name;
 	String breed;
 	int tagNumber;
-	int happiness = 50;
+ 	int happiness = 50;
 	boolean petted = false;
 
 	// Constructor(s)
